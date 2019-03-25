@@ -1,0 +1,14 @@
+syntax = "proto2";
+package environmentSensors;
+
+message SingleDataPoint {
+    required int32 value = 1;
+    required int32 scale = 2;
+}
+
+message DataResponse {
+    optional SingleDataPoint temperature = 1;
+    optional SingleDataPoint humanity = 2;
+    optional SingleDataPoint atmosphericPressure = 3;
+    optional SingleDataPoint pm2_5 = 4;
+}

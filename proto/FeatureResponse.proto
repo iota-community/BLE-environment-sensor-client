@@ -1,0 +1,9 @@
+syntax = "proto2";
+package environmentSensors;
+
+message FeatureResponse {
+    required bool hasTemperature = 2;
+    required bool hasHumanity = 3;
+    required bool hasAtmosphericPressure = 4;
+    required bool hasPm2_5 = 5;
+}
